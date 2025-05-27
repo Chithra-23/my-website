@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chithra J - Web Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 40px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+            background: #2563eb;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+        }
+
+        .sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #2563eb;
+        }
+
+        .section h2 {
+            color: #2563eb;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 12px;
+        }
+
+        .skill-item {
+            background: #2563eb;
+            color: white;
+            padding: 10px 12px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .experience-item, .education-item {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border-left: 3px solid #2563eb;
+        }
+
+        .experience-item h3, .education-item h3 {
+            color: #2563eb;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .date {
+            color: #64748b;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .company, .institution {
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 8px;
+        }
+
+        .achievement {
+            background: #dbeafe;
+            border: 1px solid #93c5fd;
+            color: #1e40af;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        .achievement strong {
+            color: #2563eb;
+        }
+
+        .cta-section {
+            text-align: center;
+            background: #f1f5f9;
+            padding: 40px;
+            border-radius: 10px;
+            border: 2px solid #e2e8f0;
+        }
+
+        .cta-section h2 {
+            color: #2563eb;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .cta-section p {
+            color: #64748b;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            margin: 0 10px;
+        }
+
+        .cta-button:hover {
+            background: #1d4ed8;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .sections {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 20px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <h1>Chithra J</h1>
+            <p class="subtitle">Web Developer & Technology Enthusiast</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧 chithra1484@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍 Bangalore, India</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="sections">
+            <section class="section">
+                <h2>Career Objective</h2>
+                <p>I'm truly driven to work in an environment which encourages me to succeed and grow professionally. Where I can get to learn and utilize my skills and knowledge appropriately.</p>
+            </section>
+
+            <section class="section">
+                <h2>Work Experience</h2>
+                <div class="experience-item">
+                    <h3>Web Developer</h3>
+                    <p class="date">Dec 2024 - Apr 2025</p>
+                    <p class="company">Hasirudala Innovation (Virtual)</p>
+                    <p>Developed an e-commerce website for Unwaste powered by Hasirudala Innovation using ASP.NET (C#) and SQL Server Management Studio.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Content Writing Intern</h3>
+                    <p class="date">Aug 2023</p>
+                    <p class="company">Marpu Foundation (Virtual)</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+                    <p class="date">2021 - 2025</p>
+                    <p class="institution">Jyoti Nivas College</p>
+                    <p>Percentage: <strong>90.29%</strong></p>
+                </div>
+                <div class="education-item">
+                    <h3>Senior Secondary (XII) - Commerce</h3>
+                    <p class="date">2021</p>
+                    <p class="institution">Spurthy College Of Management</p>
+                    <p>Percentage: <strong>87.41%</strong></p>
+                </div>
+                <div class="education-item">
+                    <h3>Secondary (X)</h3>
+                    <p class="date">2020</p>
+                    <p class="institution">St Philomena School</p>
+                    <p>Percentage: <strong>81.43%</strong></p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">C#.NET</div>
+                    <div class="skill-item">ASP.NET</div>
+                    <div class="skill-item">HTML</div>
+                    <div class="skill-item">CSS</div>
+                    <div class="skill-item">SQL</div>
+                    <div class="skill-item">AWS</div>
+                    <div class="skill-item">Canva</div>
+                    <div class="skill-item">Content Writing</div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Certifications & Training</h2>
+                <div class="experience-item">
+                    <h3>Amazon Web Services</h3>
+                    <p class="date">Feb 2025 - Present</p>
+                    <p class="company">Cloud Institution, Koramangala</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Cybersecurity In Ethical Hacking</h3>
+                    <p class="date">Jan 2024 - Mar 2024</p>
+                    <p class="company">TechByHeart, Bangalore</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Sociology In Medicine</h3>
+                    <p class="date">Aug 2024 - Present</p>
+                    <p class="company">Jyoti Nivas College (Virtual)</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Achievements</h2>
+                <div class="achievement">
+                    <strong>First Place Winner</strong><br>
+                    NESCOM Innovative Ideas Exhibition - Led a team of 4 for the Project Exhibition, generating innovative ideas and securing first place.
+                </div>
+                <div class="achievement">
+                    <strong>Leadership Role</strong><br>
+                    Head of Documentation Committee - Leading team members and guiding documentation for all departmental events.
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Current Projects</h2>
+                <div class="experience-item">
+                    <h3>Unwaste E-commerce Platform</h3>
+                    <p class="date">Dec 2024 - Present</p>
+                    <p class="company">Hasirudala Innovation</p>
+                    <p>Working on developing user interface modules for an innovative e-commerce website focused on waste management solutions.</p>
+                </div>
+            </section>
+        </div>
+
+        <section class="cta-section">
+            <h2>Let's Connect</h2>
+            <p>Ready to bring innovative solutions to your team. Let's discuss how I can contribute to your organization's success.</p>
+            <a href="mailto:chithra1484@gmail.com" class="cta-button">Send Email</a>
+        </section>
+    </div>
+</body>
+</html>
